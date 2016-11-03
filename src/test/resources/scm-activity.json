@@ -1,0 +1,14 @@
+{
+  "issueKey": "PLAT-37583",
+  "changeId": "d8ee11",
+  "changeType": "git",
+  "changeDate": "2016-08-16 16:57:00",
+  "changeBranch": "patch/version5.1.9-patch",
+  "changeAuthor": "mmasi",
+  "changeLink": "http://github.com/project/jira7-integration/commit/d8ee11bea4bbe8a74aa7314c7b1c847f8c55a930",
+  "changeMessage": "PLAT-37583 - test fix",
+  "changeFiles": [{
+    "fileName": "modules/componentb/test/com/project/module/componentb/api/definition/MartApiTest.java",
+    "fileAction": "Modified"
+  }]
+}

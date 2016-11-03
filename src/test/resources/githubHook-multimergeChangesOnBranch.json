@@ -1,0 +1,219 @@
+{
+  "ref": "refs/heads/feature/multiMergeCommits",
+  "before": "0000000000000000000000000000000000000000",
+  "after": "ac01aa84f5b20f28ce58da7190758a0ce6d36b43",
+  "created": true,
+  "deleted": false,
+  "forced": true,
+  "base_ref": null,
+  "compare": "https://internal.github.enterprise.dns.name/userb/hooktest/compare/f6f5bb22646d^...ac01aa84f5b2",
+  "commits": [
+    {
+      "id": "f6f5bb22646d0e0a32a1efe723a9a5215d7a0e05",
+      "tree_id": "f40c3f84252399a06fd2021159d8809b0c893e38",
+      "distinct": true,
+      "message": "RELENG-1 multimerge c1",
+      "timestamp": "2016-10-12T17:17:56-04:00",
+      "url": "https://internal.github.enterprise.dns.name/userb/hooktest/commit/f6f5bb22646d0e0a32a1efe723a9a5215d7a0e05",
+      "author": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "committer": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "added": [
+        "multiMergeCommits/one.txt"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+
+      ]
+    },
+    {
+      "id": "51d9d0443f55bb139e449e228ded498f39a601b0",
+      "tree_id": "49b97947f753ba8545e5d6480b1a37fc2d631ff4",
+      "distinct": true,
+      "message": "RELENG-1 multimerge c2",
+      "timestamp": "2016-10-12T17:18:09-04:00",
+      "url": "https://internal.github.enterprise.dns.name/userb/hooktest/commit/51d9d0443f55bb139e449e228ded498f39a601b0",
+      "author": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "committer": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "added": [
+        "multiMergeCommits/two.txt"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+
+      ]
+    },
+    {
+      "id": "ac01aa84f5b20f28ce58da7190758a0ce6d36b43",
+      "tree_id": "52fdfaf9e7413efb9a845b2067b358975c39e048",
+      "distinct": true,
+      "message": "RELENG-1 multimerge c3",
+      "timestamp": "2016-10-12T17:18:38-04:00",
+      "url": "https://internal.github.enterprise.dns.name/userb/hooktest/commit/ac01aa84f5b20f28ce58da7190758a0ce6d36b43",
+      "author": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "committer": {
+        "name": "userb",
+        "email": "userb@attivio.com",
+        "username": "userb"
+      },
+      "added": [
+        "multiMergeCommits/three.txt"
+      ],
+      "removed": [
+
+      ],
+      "modified": [
+
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "ac01aa84f5b20f28ce58da7190758a0ce6d36b43",
+    "tree_id": "52fdfaf9e7413efb9a845b2067b358975c39e048",
+    "distinct": true,
+    "message": "RELENG-1 multimerge c3",
+    "timestamp": "2016-10-12T17:18:38-04:00",
+    "url": "https://internal.github.enterprise.dns.name/userb/hooktest/commit/ac01aa84f5b20f28ce58da7190758a0ce6d36b43",
+    "author": {
+      "name": "userb",
+      "email": "userb@attivio.com",
+      "username": "userb"
+    },
+    "committer": {
+      "name": "userb",
+      "email": "userb@attivio.com",
+      "username": "userb"
+    },
+    "added": [
+      "multiMergeCommits/three.txt"
+    ],
+    "removed": [
+
+    ],
+    "modified": [
+
+    ]
+  },
+  "repository": {
+    "id": 63,
+    "name": "hooktest",
+    "full_name": "userb/hooktest",
+    "owner": {
+      "name": "userb",
+      "email": "userb@attivio.com"
+    },
+    "private": false,
+    "html_url": "https://internal.github.enterprise.dns.name/userb/hooktest",
+    "description": null,
+    "fork": false,
+    "url": "https://internal.github.enterprise.dns.name/userb/hooktest",
+    "forks_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/forks",
+    "keys_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/keys{/key_id}",
+    "collaborators_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/collaborators{/collaborator}",
+    "teams_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/teams",
+    "hooks_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/hooks",
+    "issue_events_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/issues/events{/number}",
+    "events_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/events",
+    "assignees_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/assignees{/user}",
+    "branches_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/branches{/branch}",
+    "tags_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/tags",
+    "blobs_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/git/blobs{/sha}",
+    "git_tags_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/git/tags{/sha}",
+    "git_refs_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/git/refs{/sha}",
+    "trees_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/git/trees{/sha}",
+    "statuses_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/statuses/{sha}",
+    "languages_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/languages",
+    "stargazers_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/stargazers",
+    "contributors_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/contributors",
+    "subscribers_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/subscribers",
+    "subscription_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/subscription",
+    "commits_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/commits{/sha}",
+    "git_commits_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/git/commits{/sha}",
+    "comments_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/comments{/number}",
+    "issue_comment_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/issues/comments{/number}",
+    "contents_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/contents/{+path}",
+    "compare_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/compare/{base}...{head}",
+    "merges_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/merges",
+    "archive_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/{archive_format}{/ref}",
+    "downloads_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/downloads",
+    "issues_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/issues{/number}",
+    "pulls_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/pulls{/number}",
+    "milestones_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/milestones{/number}",
+    "notifications_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/notifications{?since,all,participating}",
+    "labels_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/labels{/name}",
+    "releases_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/releases{/id}",
+    "deployments_url": "https://internal.github.enterprise.dns.name/api/v3/repos/userb/hooktest/deployments",
+    "created_at": 1475860459,
+    "updated_at": "2016-10-12T21:04:58Z",
+    "pushed_at": 1476307129,
+    "git_url": "git://internal.github.enterprise.dns.name/userb/hooktest.git",
+    "ssh_url": "git@internal.github.enterprise.dns.name:userb/hooktest.git",
+    "clone_url": "https://internal.github.enterprise.dns.name/userb/hooktest.git",
+    "svn_url": "https://internal.github.enterprise.dns.name/userb/hooktest",
+    "homepage": null,
+    "size": 1,
+    "stargazers_count": 1,
+    "watchers_count": 1,
+    "language": null,
+    "has_issues": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "open_issues_count": 0,
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 1,
+    "default_branch": "master",
+    "stargazers": 1,
+    "master_branch": "master"
+  },
+  "pusher": {
+    "name": "userb",
+    "email": "userb@attivio.com"
+  },
+  "sender": {
+    "login": "userb",
+    "id": 7,
+    "avatar_url": "https://internal.github.enterprise.dns.name/avatars/u/7?",
+    "gravatar_id": "",
+    "url": "https://internal.github.enterprise.dns.name/api/v3/users/userb",
+    "html_url": "https://internal.github.enterprise.dns.name/userb",
+    "followers_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/followers",
+    "following_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/following{/other_user}",
+    "gists_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/gists{/gist_id}",
+    "starred_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/subscriptions",
+    "organizations_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/orgs",
+    "repos_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/repos",
+    "events_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/events{/privacy}",
+    "received_events_url": "https://internal.github.enterprise.dns.name/api/v3/users/userb/received_events",
+    "type": "User",
+    "site_admin": true,
+    "ldap_dn": "not relevant"
+  }
+}

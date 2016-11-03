@@ -1,0 +1,91 @@
+#!/bin/bash
+#
+# chkconfig: 345 99 01
+# description: Starts and stops scmsynchronizer tool between github and SCMactivity jira plugin.
+# pidfile: /opt/scmsync/current/scmsync.pid
+
+# Source function library.
+. /etc/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+# Check that networking is up.
+[ ${NETWORKING} = "no" ] && exit 0
+
+
+SYNCUSER=build
+SYNCHOME=/opt/scmsync/current
+JAVA_HOME=/opt/tools/Java/jdk1.8.0_60
+
+prog="SCM Synchronizer GitHub To Jira"
+
+
+start() {
+    ulimit -n 65535 >/dev/null 2>&1
+    echo -n "Starting $prog: "
+    if [ -f  ${SYNCHOME}/nohup.out ]; then
+        rm -f ${SYNCHOME}/nohup.out
+    fi
+    su $SYNCUSER -c "cd ${SYNCHOME}; nohup ${SYNCHOME}/bin/scmsync &"
+    RETVAL=$?
+    [ $RETVAL -eq 1 ] &&  failure $"$base startup" || success $"$base startup"
+    return $RETVAL
+}
+
+getPid() {
+	pid=` ps -ef|egrep '[Jj]ava.*scmsync'|awk '{printf("%s ",$2)}'`
+	echo $pid
+}
+
+stop() {
+    pid=`getPid`
+    if [ ! -z "${pid}" ]; then
+        echo -n $"Shutting down $prog: ${pid}"
+        kill -TERM $pid
+        if checkpid $pid 2>&1; then
+        # TERM first, then KILL if not dead
+            kill -TERM $pid >/dev/null 2>&1
+            usleep 100000
+            if checkpid $pid && sleep 1 &&
+            checkpid $pid && sleep 1 &&
+            checkpid $pid ; then
+                kill -KILL $pid >/dev/null 2>&1
+                usleep 100000
+            fi
+        fi
+    fi
+    [ `checkpid $pid` ] && failure $"$base shutdown" || success $"$base shutdown"    
+}
+status() {
+    pid=`getPid`
+    if [ ! -z "${pid}" ]; then
+	echo "Running: Pid: ${pid}"
+        return 0
+    else
+	echo "Not Running: Pid"
+        return 1
+    fi
+}
+
+
+# See how we were called.
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart|reload)
+    stop
+    sleep 3
+    start
+    ;;
+  status)
+    status 
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart|status}"
+    exit 1
+esac
